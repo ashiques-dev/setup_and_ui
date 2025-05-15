@@ -1,16 +1,14 @@
+import { cn } from "@/lib/utils";
 import React, { SVGProps } from "react";
 
-export const SystemIcon = ({
-  className,
-  ...props
-}: SVGProps<SVGSVGElement>) => (
+export const SystemIcon = ({ className, ...props }: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
     strokeWidth={1.5}
     stroke="currentColor"
-    className="size-6"
+    className={cn("", className)}
     {...props}
   >
     <path
@@ -28,7 +26,7 @@ export const MoonIcon = ({ className, ...props }: SVGProps<SVGSVGElement>) => (
     viewBox="0 0 24 24"
     strokeWidth={1.5}
     stroke="currentColor"
-    className="size-6"
+    className={cn("", className)}
     {...props}
   >
     <path
@@ -46,7 +44,7 @@ export const SunIcon = ({ className, ...props }: SVGProps<SVGSVGElement>) => (
     viewBox="0 0 24 24"
     strokeWidth={1.5}
     stroke="currentColor"
-    className="size-6"
+    className={cn("", className)}
     {...props}
   >
     <path
